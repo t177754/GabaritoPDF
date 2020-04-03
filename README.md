@@ -1,6 +1,6 @@
 # PDF Template corrector
 
-Program that takes a PDF with many proof templates and returns a table with the grade to each proof.
+Program that takes a PDF with many proof templates and returns a table with the grade to each one.
 
 Link:
 http://es.ft.unicamp.br/ulisses/mchoice/index.html
