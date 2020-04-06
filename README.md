@@ -1,19 +1,27 @@
 # PDF Template corrector
 
 Program that takes a PDF with many proof templates and returns a table with the grade to each one.
+To make use please download the 'default.pdf' and apply to your students.
+To run some tests there are two proofs at input folder.
 
-Link:
-http://es.ft.unicamp.br/ulisses/mchoice/index.html
+The Flask server is corrector_ui.py
 
-To make use please download the "provas.pdf" or "two_pages.pdf" to get the templates of entry.
+To run in Windows you must install Poppler and add to your Path variables as described in the pdf2image documentation:
+https://github.com/Belval/pdf2image
+
+
+Other dependencies:
+flask, matplotlib, pandas, opencv-python
+
+I will work in an English version template in the future.
+
 
 # GabaritoPDF
 
 Gabarito em pdf para prova padrão
 
-Link do programa rodando:
-http://es.ft.unicamp.br/ulisses/mchoice/index.html
 
-Baixar arquivos PDF "provas.pdf" e "two_pages.pdf" para usar como entrada para teste.
+Baixar arquivo 'default.pdf' para usar o programa.
+Exemplos de provas resolvidas se encontram na input para teste.
 
 
