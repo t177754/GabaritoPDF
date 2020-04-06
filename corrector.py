@@ -27,6 +27,15 @@ class File:
    def openFileToRead(self):
       self.fileName = open(self.fileName, 'r')
 
+   def writeHeader(self, rightAnswers):
+      index = 0
+      self.fileName.write("grade, ")
+      for question in rightAnswers.getTestRightAnswers():
+         index += 1
+         self.fileName.write(str(index) + ':' + question.upper())
+         self.fileName.write(", ")
+      self.fileName.write("\n")
+
    def saveQuestion(self, templateAnswers):
       self.fileName.write(templateAnswers.getTestGrade())
       self.fileName.write(", ")
@@ -39,7 +48,7 @@ class File:
       self.fileName.close()
 
    def handleError(self):
-      self.fileName.write("Unable to process image\n") 
+      self.fileName.write("NaN\n") 
       
 
    def getFileName(self):
@@ -187,11 +196,15 @@ class Template:
       return str(round(self.grade,2))
 
    def compareTemplateWithAnswers(self, position, rightAnswers):
-      return (self.getMarkedQuestions()[position]==rightAnswers.getTestRightAnswers()[position])
+      print(self.getMarkedQuestions()[position].questionLetter.lower())
+      print(rightAnswers.getTestRightAnswers()[position])
+      return (self.getMarkedQuestions()[position].questionLetter.lower()==rightAnswers.getTestRightAnswers()[position].lower())
       
    def setTestGrade(self, rightAnswers):
       numberOfQuestions = len(rightAnswers.getTestRightAnswers())
       pointsForEachQuestion = (10 / numberOfQuestions)
+
+      print(rightAnswers)
 
       for position in range(numberOfQuestions):
          if (self.compareTemplateWithAnswers(position, rightAnswers)):
@@ -223,6 +236,7 @@ def main(inputfile, answers):
    outputfile.openFileToWrite()
 
    testRightAnswers = RightAnswers(answers)
+   outputfile.writeHeader(testRightAnswers)
 
    if inputfile.getFileName()[-4:] == ".pdf" :
       images = inputfile.pdfToImage()

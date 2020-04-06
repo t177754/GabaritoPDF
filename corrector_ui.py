@@ -27,6 +27,7 @@ def correct():
     corrector.main(inputfile.filename, answers)
    
     df = pd.read_csv('static/output.csv')
+    df.index += 1
     return df.to_html()
 
 
