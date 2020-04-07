@@ -9,12 +9,16 @@ The Flask server is corrector_ui.py
 To run in Windows you must install Poppler and add to your Path variables as described in the pdf2image documentation:
 https://github.com/Belval/pdf2image
 
-
 Other dependencies:
 flask, matplotlib, pandas, opencv-python
 
 I will work in an English version template in the future.
 
+![PC Index](static/PCResolved.PNG)
+
+![PC Index](static/PCIndex.PNG)
+
+![PC Result](static/PCResult.PNG)
 
 # GabaritoPDF
 
