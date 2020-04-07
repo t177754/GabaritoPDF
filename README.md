@@ -15,10 +15,8 @@ flask, matplotlib, pandas, opencv-python
 I will work in an English version template in the future.
 
 ![PC Index](/static/PCIndex.png)
-Format: ![Alt Text](url)
 
 ![PC Result](/static/PCResult.png)
-Format: ![Alt Text](url)
 
 # GabaritoPDF
 
