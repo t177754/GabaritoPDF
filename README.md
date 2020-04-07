@@ -14,9 +14,9 @@ flask, matplotlib, pandas, opencv-python
 
 I will work in an English version template in the future.
 
-![PC Index](/static/PCIndex.png)
+![PC Index](static/PCIndex.png)
 
-![PC Result](/static/PCResult.png)
+![PC Result](static/PCResult.png)
 
 # GabaritoPDF
 
