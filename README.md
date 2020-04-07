@@ -2,7 +2,7 @@
 
 Program that takes a PDF with many proof templates and returns a table with the grade to each one.
 To make use please download the 'default.pdf' and apply to your students.
-To run some tests there are two proofs at input folder.
+To run some tests there is a resolved template at input folder.
 
 The Flask server is corrector_ui.py
 
@@ -16,6 +16,7 @@ I will work in an English version template in the future.
 
 ![PC Index](static/PCIndex.PNG)
 ![PC Result](static/PCResult.PNG)
+Proof 8 example:
 ![PC Index](static/PCResolved.PNG)
 
 # GabaritoPDF
