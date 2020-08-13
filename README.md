@@ -18,6 +18,7 @@ I will work in an English version template in the future.
 ![PC Result](static/PCResult.PNG)
 
 Proof 8 example:
+
 ![PC Index](static/PCResolved.PNG)
 
 # GabaritoPDF
